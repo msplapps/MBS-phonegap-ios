@@ -11845,7 +11845,7 @@ angular.module('mm.core.login', [])
                 disableAnimate: true,
                 disableBack: true
             });
-            $state.go('mm_login.init');
+            $state.go('mm_login.sites');
         });
     }
 }]);
@@ -22407,7 +22407,7 @@ angular.module('mm.core.sidemenu')
     loadSiteInfo();
     $scope.logout = function() {
         $mmSitesManager.logout().finally(function() {
-            $state.go('mm_login.sites');
+            $state.go('mm_login.credentials');
         });
     };
     function loadSiteInfo() {
