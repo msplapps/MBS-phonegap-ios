@@ -96,7 +96,7 @@ angular.module('mm.core', ['pascalprecht.translate'])
                                 $state.go($stateParams.state, $stateParams.params);
                             }
                         }, function() {
-                            $state.go('mm_login.credentials');
+                            $state.go('mm_login.sites');
                         });
                     }
                 }
@@ -118,7 +118,7 @@ angular.module('mm.core', ['pascalprecht.translate'])
                         if ($stateParams.siteid) {
                             loadSiteAndGo();
                         } else {
-                            $state.go('mm_login.credentials');
+                            $state.go('mm_login.sites');
                         }
                     }
                 });
@@ -19762,7 +19762,7 @@ angular.module('mm.core.login')
             }
         } else {
             $mmSitesManager.hasSites().then(function() {
-                return $state.go('mm_login.credentials');
+                return $state.go('mm_login.sites');
             }, function() {
                 return $mmLoginHelper.goToAddSite();
             });
@@ -19808,7 +19808,7 @@ angular.module('mm.core.login')
                 disableAnimate: true,
                 disableBack: true
             });
-            $state.go('mm_login.credentials');
+            $state.go('mm_login.sites');
         });
     };
     $scope.login = function() {
