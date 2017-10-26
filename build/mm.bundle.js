@@ -11561,7 +11561,7 @@ angular.module('mm.core.login', [])
     })
     .state('mm_login.sites', {
         url: '/sites',
-        templateUrl: 'core/components/login/templates/site.html',
+        templateUrl: 'core/components/login/templates/sites.html',
         controller: 'mmLoginSitesCtrl',
         onEnter: ["$mmLoginHelper", "$mmSitesManager", function($mmLoginHelper, $mmSitesManager) {
             $mmSitesManager.hasNoSites().then(function() {
@@ -66193,9 +66193,9 @@ angular.module('mm.core')
    // "demo_sites": {"student": {"url": "http://school.demo.moodle.net", "username": "student", "password": "moodle"}, "teacher": {"url": "http://school.demo.moodle.net", "username": "teacher", "password": "moodle"}, "cva": {"url": "http://mm.cvaconsulting.com/moodle", "username": "student", "password": "student"}},
     "gcmpn": "694767596569",
     "customurlscheme": "moodlemobile",
-    "siteurl": "http://businessschool.mv/",
+    "siteurl": "http://businessschool.mv/studentportal/",
     "skipssoconfirmation": "false",
     "forcedefaultlanguage": "false",
-    "privacypolicy": "https://google.com"
+    "privacypolicy": "https://moodle.org/mod/page/view.php?id=8148"
 }
 );
