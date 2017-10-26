@@ -11561,7 +11561,7 @@ angular.module('mm.core.login', [])
     })
     .state('mm_login.sites', {
         url: '/sites',
-        templateUrl: 'core/components/login/templates/credentials.html',
+        templateUrl: 'core/components/login/templates/sites.html',
         controller: 'mmLoginSitesCtrl',
         onEnter: ["$mmLoginHelper", "$mmSitesManager", function($mmLoginHelper, $mmSitesManager) {
             $mmSitesManager.hasNoSites().then(function() {
@@ -11845,7 +11845,7 @@ angular.module('mm.core.login', [])
                 disableAnimate: true,
                 disableBack: true
             });
-            $state.go('mm_login.credentials');
+            $state.go('mm_login.init');
         });
     }
 }]);
