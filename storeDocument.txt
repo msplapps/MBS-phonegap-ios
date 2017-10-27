@@ -1,0 +1,30 @@
+11564
+11848
+--------------------------
+replacing state mm_login.sites to mm_login.credentials in scope of logout line 22410
+replacing state mm_login.sites to mm_login.credentials 99, 121, 11848, 12254, 19765, 19811, 19993
+
+Replace back 99, 121 , 19765, 19811
+
+
+mm_login.credentials
+
+Find #0064d2 (button color)replace #333399 (Theme color)
+
+-----------------------------
+To Do:
+
+1 keystore and playstore release from CW account
+2 Logout bug solution
+3 Student Login logo update
+4 Orange background screen after splash
+5 Splash Screen Update
+
+
+----------------------------------
+Keystore trial 1 :
+alias name: maldives
+password: m@ldive$
+First & Lastname: Maldives Business School
+
+Is CN=Maldives Bussiness School, OU=Maldives Bussiness School, O=Maldives Business School, L=Maldives, ST=Maldives, C=MV correct?
