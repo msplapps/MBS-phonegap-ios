@@ -19808,7 +19808,7 @@ angular.module('mm.core.login')
                 disableAnimate: true,
                 disableBack: true
             });
-            $state.go('mm_login.credentials');
+            $state.go('mm_login.sites');
         });
     };
     $scope.login = function() {
