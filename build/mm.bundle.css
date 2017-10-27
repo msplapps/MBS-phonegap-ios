@@ -14454,7 +14454,8 @@ ion-popover-view {
  .button.bg-blue,
  .button.bg-blue:hover,
  .button.bg-blue:focus,
- .button.bg-blue:visited{background: #333399 !important; color:#fff !important;}
+ .button.bg-blue:visited,
+ .button.button-block{background: #333399 !important; color:#fff !important;}
 
 
 
