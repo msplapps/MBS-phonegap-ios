@@ -14451,10 +14451,10 @@ ion-popover-view {
   margin-right: 7px; }
 
 
- .bg-blue,
- .bg-blue:hover,
- .bg-blue:focus,
- .bg-blue:visited{background: #333399 !important;}
+ .button.bg-blue,
+ .button.bg-blue:hover,
+ .button.bg-blue:focus,
+ .button.bg-blue:visited{background: #333399 !important;}
 
 
 
