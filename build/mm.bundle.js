@@ -11688,7 +11688,7 @@ angular.module('mm.core.login', [])
         }, 1000);
     });
     $rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams) {
-        if (!$mmApp.isReady() && toState.name !== ' ') {
+        if (!$mmApp.isReady() && toState.name !== 'mm_login.init') {
             event.preventDefault();
             $state.transitionTo('mm_login.init');
             $log.warn('Forbidding state change to \'' + toState.name + '\'. App is not ready yet.');
