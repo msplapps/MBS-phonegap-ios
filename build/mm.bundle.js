@@ -11627,7 +11627,7 @@ angular.module('mm.core.login', [])
         var $state = $injector.get('$state');
         return $state.href('mm_login.init').replace('#', '');
     });
-    $mmInitDelegateProvider.registerProcess('mmLogin', '$mmSitesManager.restoreSession', mmInitDelegateMaxAddonPriority + 1500);
+    $mmInitDelegateProvider.registerProcess('mmLogin', '$mmSitesManager.restoreSession', mmInitDelegateMaxAddonPriority + 200);
 }])
 .run(["$log", "$state", "$mmUtil", "$translate", "$mmSitesManager", "$rootScope", "$mmSite", "$mmURLDelegate", "$ionicHistory", "$timeout", "$mmEvents", "$mmLoginHelper", "mmCoreEventSessionExpired", "$mmApp", "$ionicPlatform", "mmCoreConfigConstants", "$mmText", "mmCoreEventPasswordChangeForced", "mmCoreEventUserNotFullySetup", "mmCoreEventSitePolicyNotAgreed", "$q", function($log, $state, $mmUtil, $translate, $mmSitesManager, $rootScope, $mmSite, $mmURLDelegate, $ionicHistory, $timeout,
                 $mmEvents, $mmLoginHelper, mmCoreEventSessionExpired, $mmApp, $ionicPlatform, mmCoreConfigConstants, $mmText,
@@ -19754,6 +19754,9 @@ angular.module('mm.core.login')
             }
         }
         loadCurrent();
+         updateTimeout = $timeout(function() {
+        templateUrl: 'core/components/login/templates/init.html'
+        }, 5000);
     });
     function loadCurrent() {
         if ($mmSite.isLoggedIn()) {
