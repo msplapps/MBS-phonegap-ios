@@ -11557,6 +11557,11 @@ angular.module('mm.core.login', [])
         url: '/init',
         templateUrl: 'core/components/login/templates/init.html',
         controller: 'mmLoginInitCtrl',
+        resolve: {
+            splash: function(AppInit) {
+                return AppInit.splash();
+            }
+        },
         cache: false 
     })
     .state('mm_login.sites', {
@@ -66199,4 +66204,22 @@ angular.module('mm.core')
     "forcedefaultlanguage": "false",
     "privacypolicy": "https://google.com"
 }
-);
+)
+.factory('AppInit', function ($q, $cordovaSplashscreen, $ionicPlatform, $timeout) {
+    return {
+        splash: function() {
+
+            var deferred = $q.defer();
+
+            $ionicPlatform.ready(function(){
+                $timeout(function(){
+                    $cordovaSplashscreen.hide();
+                    deferred.resolve();
+                }, 5000);
+            });
+
+            return deferred.promise;
+            
+        }
+    };
+})
