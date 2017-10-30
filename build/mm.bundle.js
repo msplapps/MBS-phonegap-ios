@@ -60659,7 +60659,7 @@ angular.module('mm.addons.mod_scorm')
                                 }
                                 if (errorCode == "0") {
                                     if (scorm.autocommit && !(timeout)) {
-                                        timeout = setTimeout(self.LMSCommit, 90000, [""]);
+                                        timeout = setTimeout(self.LMSCommit, 60000, [""]);
                                     }
                                     if (typeof datamodel[self.scoId][elementmodel].range != "undefined") {
                                         range = datamodel[self.scoId][elementmodel].range;
