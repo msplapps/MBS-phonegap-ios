@@ -179,7 +179,7 @@ angular.module('mm.core', ['pascalprecht.translate'])
     moment.relativeTimeThreshold('s', 60);
     $compileProvider.aHrefSanitizationWhitelist(hreflist);
     $compileProvider.imgSrcSanitizationWhitelist(imglist);
-    $mmInitDelegateProvider.registerProcess('mmAppInit', '$mmApp.initProcess', mmInitDelegateMaxAddonPriority + 400, true);
+    $mmInitDelegateProvider.registerProcess('mmAppInit', '$mmApp.initProcess', mmInitDelegateMaxAddonPriority + 1500, true);
     $mmInitDelegateProvider.registerProcess('mmUpdateManager', '$mmUpdateManager.check', mmInitDelegateMaxAddonPriority + 300, true);
     $mmInitDelegateProvider.registerProcess('mmFSClearTmp', '$mmFS.clearTmpFolder', mmInitDelegateMaxAddonPriority + 150, false);
 }])
@@ -19739,7 +19739,7 @@ angular.module('mm.core.login')
         var redirectData = $mmApp.getRedirect();
         if (redirectData.siteid && redirectData.state) {
             $mmApp.storeRedirect('', '', '');
-            if (new Date().getTime() - redirectData.timemodified < 50000) {
+            if (new Date().getTime() - redirectData.timemodified < 20000) {
                 if (redirectData.siteid != mmCoreNoSiteId) {
                     return $mmSitesManager.loadSite(redirectData.siteid).then(function() {
                         if (!$mmLoginHelper.isSiteLoggedOut(redirectData.state, redirectData.params)) {
