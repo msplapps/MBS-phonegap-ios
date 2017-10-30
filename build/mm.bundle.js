@@ -19754,9 +19754,7 @@ angular.module('mm.core.login')
             }
         }
         loadCurrent();
-         updateTimeout = $timeout(function() {
-        templateUrl: 'core/components/login/templates/init.html'
-        }, 5000);
+         
     });
     function loadCurrent() {
         if ($mmSite.isLoggedIn()) {
@@ -60661,7 +60659,7 @@ angular.module('mm.addons.mod_scorm')
                                 }
                                 if (errorCode == "0") {
                                     if (scorm.autocommit && !(timeout)) {
-                                        timeout = setTimeout(self.LMSCommit, 60000, [""]);
+                                        timeout = setTimeout(self.LMSCommit, 90000, [""]);
                                     }
                                     if (typeof datamodel[self.scoId][elementmodel].range != "undefined") {
                                         range = datamodel[self.scoId][elementmodel].range;
