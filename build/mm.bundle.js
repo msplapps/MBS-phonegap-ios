@@ -19739,7 +19739,7 @@ angular.module('mm.core.login')
         var redirectData = $mmApp.getRedirect();
         if (redirectData.siteid && redirectData.state) {
             $mmApp.storeRedirect('', '', '');
-            if (new Date().getTime() - redirectData.timemodified < 20000) {
+            if (new Date().getTime() - redirectData.timemodified < 50000) {
                 if (redirectData.siteid != mmCoreNoSiteId) {
                     return $mmSitesManager.loadSite(redirectData.siteid).then(function() {
                         if (!$mmLoginHelper.isSiteLoggedOut(redirectData.state, redirectData.params)) {
