@@ -3,12 +3,12 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         xmlns:android = "http://schemas.android.com/apk/res/android"
         id        = "com.codeworksukltd.iQube"
-        versionCode = "20201"
-        version   = "3.3.3">
-    <name>MBS Student Portal</name>
+        versionCode = "20202"
+        version   = "3.3.4">
+    <name>Maldives Business School</name>
 
     <description>
-        MBS Student Portal official app
+       Maldives Business School official app
     </description>
 
     <author href="http://moodle.com" email="mobile@moodle.com">

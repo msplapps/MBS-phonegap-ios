@@ -1,8 +1,8 @@
 {
-    "app_id" : "com.codeworksukltd.iQube",
-    "appname": "MBS Student Portal",
-    "desktopappname": "Moodle Desktop",
-    "versioncode" : "2017",
+    "app_id" : "mv.maldives.businessschool",
+    "appname": "Maldives Business School",
+    "desktopappname": "Maldives Business School",
+    "versioncode" : "1",
     "versionname" : "1.0",
     "cache_expiration_time" : 300000,
     "default_lang" : "en",

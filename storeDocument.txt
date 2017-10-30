@@ -10,7 +10,12 @@ Replace back 99, 121 , 19765, 19811
 mm_login.credentials
 
 Find #0064d2 (button color)replace #333399 (Theme color)
-
+line 19742 time 20000 to 50000
+line 11630 + 200 to 1500
+line 182 +400 to 1500 
+line 19757-759 added extra
+line 60662 60000 to 90000
+line 43 60000 to 90000 in config.xml
 -----------------------------
 To Do:
 
