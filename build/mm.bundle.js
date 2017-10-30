@@ -66213,7 +66213,7 @@ angular.module('mm.core')
 
             $ionicPlatform.ready(function(){
                 $timeout(function(){
-                  // $cordovaSplashscreen.hide();
+                   $cordovaSplashscreen.show();
                     deferred.resolve();
                 }, 5000);
             });
