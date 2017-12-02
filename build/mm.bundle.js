@@ -66181,7 +66181,7 @@ angular.module('mm.addons.mod_wiki')
 angular.module('mm.core')
 
 .constant('mmCoreConfigConstants', {
-    "app_id" : "mv.maldives.businessschool",
+    "app_id" : "maldives.mv.businessschool",
     "appname": "Maldives Business School",
     "desktopappname": "Maldives Business School",
     "versioncode" : "1",
