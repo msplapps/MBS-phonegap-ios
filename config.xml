@@ -536,13 +536,15 @@
                   <string>com.adobe.pdf</string>
                 </array>
             </dict>
-        </array>
+              </array>
     </gap:config-file>
 
     <gap:config-file platform="ios" parent="NSAppTransportSecurity" mode="add">
         <dict>
             <key>NSAllowsArbitraryLoads</key><true/>
         </dict>
+        <key>NSPhotoLibraryUsageDescription</key>
+        <string>allow media access</string>
     </gap:config-file>
-
+    
 </widget>
