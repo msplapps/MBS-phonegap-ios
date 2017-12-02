@@ -4,7 +4,7 @@
         xmlns:android = "http://schemas.android.com/apk/res/android"
         id        = "maldives.mv.businessschool"
         versionCode = "1"
-        version   = "1.0.0">
+        version   = "1.0.1">
     <name>Maldives Business School</name>
 
     <description>
